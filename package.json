@@ -1,0 +1,33 @@
+{
+  "name": "webpack-pages",
+  "version": "1.0.0",
+  "description": "nope",
+  "main": "index.js",
+  "scripts": {
+    "test": "nope",
+    "build": "node_modules/.bin/webpack --config ./webpack.product.config.js",
+    "dev": "webpack-dev-server --open"
+  },
+  "keywords": [
+    "nope"
+  ],
+  "author": "nope",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
+    "ejs-loader": "^0.3.0",
+    "extract-loader": "^0.1.0",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {}
+}
