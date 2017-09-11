@@ -33,9 +33,9 @@
     - page => 存放页面
         - index =>单个页面文件夹
             - index.ejs =>页面模板
-            - html.js =>组织生产该页面的html文件的js 在该文件中可引入公共组件  定义页面布局
+            - html.js =>组织生产该页面的html文件的js 在该文件中可引入公共组件模板(ejs)  定义页面布局
             - index.css =>页面的css
-            - entry.js =>页面入口js 创建页面逻辑 引入页面样式 公共组件方法 公共组件样式
+            - entry.js =>页面入口js 创建页面逻辑 引入页面样式 公共组件方法(js) 公共组件样式(css)
     - assets 另一种静态资源的存放文件夹 引入方式为require('相对引用文件的路径') 例 :  
             ```
                 <img src="${require('../../../assets/img.png')}">
