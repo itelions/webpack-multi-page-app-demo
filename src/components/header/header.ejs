@@ -1,1 +1,13 @@
 <div>header</div>
+<% if (Nav&&Nav.length) { %>
+<div>nav</div>
+  <ul>  
+    <% Nav.forEach(function(item){ %>  
+      <li>
+		<a href="<%= item.url %>">
+			<%= item.name %>
+		</a>
+      </li>  
+    <% }) %>  
+  </ul>  
+<% } %> 

@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const glob = require('glob');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
+// 插件
 const plugins = [
 	new webpack.optimize.OccurrenceOrderPlugin(),
 	new webpack.optimize.UglifyJsPlugin(),
@@ -11,6 +12,7 @@ const plugins = [
 	    to:__dirname + '/dist/static',
 	}]),
 ];
+// 入口
 const entry={};
 
 glob.sync('./src/page/**/entry.js') .forEach(function(src) {
@@ -21,12 +23,12 @@ glob.sync('./src/page/**/entry.js') .forEach(function(src) {
 		inject: 'head', //js放到头部
 		chunks: [name] //指定页面加载的entry
 	}))
+	// 添加入口
 	entry[name]=src;
 })
 
 module.exports = {
 	entry: entry,
-	devtool: 'eval-source-map',
 	output: {
 		path: __dirname + '/dist',
 		filename: 'static/js/[name].js',
