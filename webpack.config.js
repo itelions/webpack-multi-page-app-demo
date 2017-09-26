@@ -21,7 +21,7 @@ module.exports = {
 	devtool: 'eval-source-map',
 	output: {
 		path: __dirname + '/dist',
-		filename: 'static/js/[name].js',
+		filename: 'static/js/[name].[hash].js',
 		publicPath: '/'
 	},
 	module: {
