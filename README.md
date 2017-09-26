@@ -17,10 +17,10 @@
 
 #### 项目结构  
 - dist => 打包文件位置  
-- webpack.config.js => 生产环境配置文件
-- webpack.config.product.js => 部署环境配置文
-件
-- static => 静态资源存放文件夹 使用绝对路径方式或者相对路径引用  例 :  
+- webpack.config.js => webpack 基础 配置文件
+- product.js => 部署环境 额外 配置文件
+- develop.js => 生产环境 额外 配置文件
+- static => 静态资源存放文件夹 使用绝对路径方式 或者 相对路径引用  例 :  
         ```
             <img src="/static/img.png">
         ```
@@ -34,7 +34,7 @@
     - page => 存放页面
         - index =>单个页面文件夹
             - index.ejs =>页面模板  
-                - html.js =>组织生产该页面的html文件的js 在该文件中可引入公共组件模板(ejs)  定义页面布局
+                - html.js =>使用ejs模板拼装该页面html文件的js 在该文件中可引入公共组件模板(ejs)
             - index.css =>页面的css  
                 - entry.js =>页面入口js 创建页面逻辑 引入页面样式 公共组件方法(js) 公共组件样式(css)
     - assets 另一种静态资源的存放文件夹 引入方式为require('相对引用文件的路径') 例 :  

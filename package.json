@@ -1,12 +1,12 @@
 {
   "name": "webpack-pages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nope",
   "main": "index.js",
   "scripts": {
     "test": "nope",
-    "build": "node_modules/.bin/webpack --config ./webpack.product.config.js",
-    "dev": "webpack-dev-server --open"
+    "build": "node_modules/.bin/webpack --config ./product.js",
+    "dev": "webpack-dev-server --open --config ./develop.js"
   },
   "keywords": [
     "nope"

@@ -2,10 +2,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const glob = require('glob');
 
-const plugins = [
-	new webpack.optimize.OccurrenceOrderPlugin(),
-	new webpack.optimize.UglifyJsPlugin(),
-];
+const plugins = [];
 const entry={};
 
 glob.sync('./src/page/**/entry.js') .forEach(function(src) {
@@ -26,12 +23,6 @@ module.exports = {
 		path: __dirname + '/dist',
 		filename: 'static/js/[name].js',
 		publicPath: '/'
-	},
-	devServer: {
-		contentBase: "./", //本地服务器所加载的页面所在的目录
-		historyApiFallback: true, //不跳转
-		port: 4399,
-		inline: true,
 	},
 	module: {
 		rules: [{
