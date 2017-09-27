@@ -4,7 +4,11 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const config  =require('./webpack.config.js')
 
 // 生产环境中的插件
+const ENV = new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify('production')
+})
 const plugins = [
+	ENV,
 	new webpack.optimize.OccurrenceOrderPlugin(),
 	new webpack.optimize.UglifyJsPlugin(),
 	new CopyWebpackPlugin([{

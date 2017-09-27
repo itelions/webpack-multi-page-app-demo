@@ -3,7 +3,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const config  =require('./webpack.config.js')
 
 // 开发环境中的插件
-const plugins = [];
+const ENV = new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify('development')
+})
+const plugins = [ENV];
 
 config.plugins=config.plugins.concat(plugins);
 
