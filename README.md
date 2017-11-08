@@ -7,7 +7,7 @@
 
 * 可以在项目中访问变量process.env.NODE_ENV获取项目环境 , 当然可以用webpack.DefinePlugin定义更多的全局变量(2017-9-27 更新)
 
-* 打包好的文件要放在服务器中运行 , 或者修改webpack.config.product.js output中的publicPath为''让引用路径变成相对路径  
+* 打包好的文件要放在服务器中运行 , 或者修改product.js output中的publicPath为''让引用路径变成相对路径  
 
 #### npm 命令
 
