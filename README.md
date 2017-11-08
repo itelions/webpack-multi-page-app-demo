@@ -1,7 +1,9 @@
 ### 基于webpack的多页面应用简单脚手架
 >在webpack使用ejs作为生成html的生成模板  
 配合html-webpack-plugin模块可以在页面中引入公共组件  
-主要解决了多页面中多页面中公共部分修改后的代码不停copy到其他页面的问题
+主要解决了多页面中多页面中公共部分修改后的代码不停copy到其他页面的问题  
+
+* 添加对sass和css单独打包的支持(2017-11-8 更新)
 
 * 可以在项目中访问变量process.env.NODE_ENV获取项目环境 , 当然可以用webpack.DefinePlugin定义更多的全局变量(2017-9-27 更新)
 
