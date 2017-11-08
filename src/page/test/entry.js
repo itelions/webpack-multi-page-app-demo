@@ -1,7 +1,12 @@
 const footer=require('./../../components/footer/footer.js')
 
-import './../../components/footer/footer.css';
+import './test.scss'
 
 window.onload=function(){
-	footer.showEnv(document.getElementById('env'))
+	var envDisplay=document.getElementById('environment')
+	if(DEVELOPMENT){
+		envDisplay.innerHTML="开发环境"
+	}else{
+		envDisplay.innerHTML="生产环境"
+	}
 }

@@ -1,5 +1,7 @@
-#env{
+.footer-title{
 	margin: 10px;
-	color:darkorange;
-	cursor:default;
+	color: darkorange;
+}
+.img-title{
+	margin: 10px;
 }

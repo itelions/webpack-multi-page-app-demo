@@ -1,3 +1,27 @@
 .index{
 	color:red;
 }
+
+#result{
+	margin: 10px;
+}
+
+.move{
+	animation: left-to-right .3s;
+}
+
+.nav{
+	margin: 10px;
+
+}
+.nav a{
+	color:green;
+}
+
+@keyframes left-to-right{
+	from{
+		transform: translateX(-50%);
+	}to{
+		transform: translateX(0);
+	}
+}
