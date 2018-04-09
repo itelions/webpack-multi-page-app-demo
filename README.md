@@ -1,5 +1,5 @@
-### 基于webpack的多页面应用简单脚手架
->在webpack使用ejs作为生成html的生成模板  
+### 基于webpack的多页面应用简单开发环境
+>在webpack使用ejs作为生成html的生成模板  
 配合html-webpack-plugin模块可以在页面中引入公共组件  
 主要解决了多页面中多页面中公共部分修改后的代码不停copy到其他页面的问题  
 
